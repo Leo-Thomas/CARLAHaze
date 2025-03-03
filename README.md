@@ -1,4 +1,4 @@
-# SkyScenes
+# CARLAHaze
 
 This is the repository that contains source code for the [CARLAHaze website](https://leo-thomas.github.io/CARLAHaze/).
 Parts of this website has been adopted from [Nerfies website](https://nerfies.github.io)
