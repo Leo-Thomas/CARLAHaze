@@ -1,7 +1,7 @@
 <div align="center">
   
 # CARLAHaze: A Large-scale Synthetic Dataset for Outdoor Image Dehazing
-[Leo Thomas Ramos](https://www.linkedin.com/in/leo-thomas-ramos/)\, [Henry Valesaca](#)\, [Ángel D. Sappa](https://es.linkedin.com/in/angel-sappa-61532b17)
+[Leo Thomas Ramos](https://www.linkedin.com/in/leo-thomas-ramos/)\, [Henry Valesaca](https://ec.linkedin.com/in/henry-velesaca-lara/)\, [Ángel D. Sappa](https://es.linkedin.com/in/angel-sappa-61532b17)
 </div>
 
 <!-- This repository is the official Pytorch implementation for [SkyScenes](). -->
