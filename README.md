@@ -27,33 +27,7 @@ SkyScenes has been accepted at [ECCV 2024](https://www.ecva.net/papers/eccv_2024
 
 ## Data set description
 
-The Augmented-DeepSpaceYolo dataset increases the number of images from the original 4,696 to 8,421 by applying data augmentation techniques. These transformations were carefully selected to simulate real-world variations encountered in astronomical imaging, enhancing model robustness and evaluation.
 
-The following transformations were applied:
-
-* **Cropping & zooming:** 0% minimum zoom, 20% maximum zoom
-* **Rotations:** Between -15° and +15°
-* **Brightness adjustments:** -15% to +15%
-* **Blurring:** Up to 2.5 pixels
-* **Noise addition:** Up to 0.15% of pixels
-
-These augmentations reflect common challenges in astronomical observations:
-
-* **Cropping & zooming** simulate variations in focal length and different perspectives.
-* **Rotations** account for telescope movement and Earth’s rotation.
-* **Brightness adjustments** replicate fluctuating light conditions and atmospheric interference.
-* **Blurring** mimics slight defocusing and turbulence effects.
-* **Noise addition** replicates sensor noise and other random artifacts affecting image quality.
-
-A default split is provided, corresponding to the one used in the paper:
-
-| Split        | # Images   |
-|----------------|----------|
-| Train       | 7,486   |
-| Valid   | 469  |
-| Test           | 466  |
-
-The labels are provided in **YOLO format**, making them compatible with popular object detection frameworks. The images are in JPG format, with a resolution of 608×608 pixels.
 
 ## Training and test on all haze leves
 
