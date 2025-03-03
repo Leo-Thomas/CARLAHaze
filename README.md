@@ -55,6 +55,10 @@ A default split is provided, corresponding to the one used in the paper:
 
 The labels are provided in **YOLO format**, making them compatible with popular object detection frameworks. The images are in JPG format, with a resolution of 608×608 pixels.
 
+## Training and test on all haze leves
+
+In order to train and/or evaluate your models using all haze levels together, or a specific combination, we provide you with a straight forward script where you can specify the paths of the different levels or scenes of interest and generate the combined train, val, and test splits. See [combine.py](https://github.com/Leo-Thomas/CARLAHaze/blob/main/combine.py)
+
 ## License
 
 Distributed under MIT license. See `LICENSE` for more information.
