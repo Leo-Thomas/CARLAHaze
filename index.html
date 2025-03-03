@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="description"
+            content="CARLAHaze: A Large-scale Synthetic Dataset for Outdoor Image Dehazing"">
+    
+    
+      <meta name="description" content="CARLAHaze: A Large-scale Synthetic Dataset for Outdoor Image Dehazing"">
+      <meta property="og:title" content="CARLAHaze: A Large-scale Synthetic Dataset for Outdoor Image Dehazing"/>
+      <meta property="og:description" content="CARLAHaze: A Large-scale Synthetic Dataset for Outdoor Image Dehazing"/>
+      <meta property="og:url" content="https://github.com/Leo-Thomas/CARLAHaze/"/>
+    
+    
+      <meta name="twitter:title" content="CARLAHaze: A Large-scale Synthetic Dataset for Outdoor Image Dehazing">
+      <meta name="twitter:description" content="CARLAHaze: A Large-scale Synthetic Dataset for Outdoor Image Dehazing"">
+    
+      <meta name="keywords" content="CARLA, Haze, Dehazing, Synthetic, Domain Adaptation, Image Dehazing">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>CARLAHaze: A Large-scale Synthetic Dataset for Outdoor Image Dehazing</title>
+    
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-PYVRSFMDRL');
+      </script> -->
+    
+      <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+            rel="stylesheet">
+    
+      <link rel="stylesheet" href="./static/css/bulma.min.css">
+      <!-- <link rel="stylesheet" href="./static/css/bulma-carousel.min.css"> -->
+      <!-- <link rel="stylesheet" href="./static/css/bulma-slider.min.css"> -->
+      <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+      <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+      <link rel="stylesheet" href="./static/css/index.css">
+      <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+      <link href="./static/css/imagecarousell.css" rel="stylesheet"/>
+    
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script defer src="./static/js/fontawesome.all.min.js"></script>
+      <!-- <script src="./static/js/bulma-carousel.min.js"></script> -->
+      <!-- <script src="./static/js/bulma-slider.min.js"></script> -->
+      <script src="./static/js/index.js"></script>
+      
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CARLAHaze: A Large-scale Synthetic Dataset for Outdoor Image Dehazing</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/leo-thomas-ramos/">Leo Thomas Ramos</a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="https://ec.linkedin.com/in/henry-velesaca-lara/">Henry Valesaca</a><sup>*</sup>,</span>
+            <span class="author-block">
+              <a href="https://es.linkedin.com/in/angel-sappa-61532b17">Ángel D. Sappa</a>,
+            </span>
+          </div>
+
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal Contrbution</span>
+          </div> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Computer Vision Center, Universitat Autònoma de Barcelona, Spain</span><br>
+            <span class="author-block">ESPOL Polytechnic University, Ecuador</span>
+            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!--<span class="link-block">
+                <a href="https://arxiv.org/abs/2312.06719"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>-->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Leo-Thomas/CARLAHaze/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>GitHub</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                   <!-- <img src="static/images/hf.svg" alt="HF"> -->
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <h2 class="title is-3" style="color:red; text-align:center;">
+    <b>CARLAHaze is under review 
+      <!-- <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/10113_ECCV_2024_paper.php" target="_blank" style="color:inherit; text-decoration:none; position:relative;">
+        <u>ECCV 2024</u>
+        <span style="position:absolute; width:100%; height:2px; bottom:0; left:0; background-color:red; visibility:hidden; transform:scaleX(0); transition:all 0.3s ease-in-out;"></span>
+      </a>! -->
+    </b>
+  </h2>
+  
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div style="text-align: center;">
+        <img width="1000" src="static/images/teaser.png">
+      </div> 
+      <h2 class="subtitle has-text-justified">
+        CARLAHaze contains 10,000 high-resolution paired images (clean and hazy), distributed across 10 different scenarios and 10 incremental haze intensity levels. The dataset includes diverse scenarios and visual elements, distance-based haze distribution consistent with realistic atmospheric conditions, and multiple viewpoints enhancing visual variability. Additionally, two preprocessed versions with standardized resolutions of 640x480 and 512x512 pixels are provided, each containing 40,000 images. It also offers predefined splits for training, validation, and testing to facilitate its use.    
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!--<section class="section hero is-light">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Video</h2>
+      <div class="publication-video">
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/robust_aerial_videos.mp4"type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This project presents CARLAHaze, a synthetic dataset designed for outdoor image dehazing. CARLAHaze contains 10,000 high-resolution paired images (clean and hazy), distributed across 10 different scenarios and 10 incremental haze intensity levels. The dataset includes diverse scenarios and visual elements, distance-based haze distribution consistent with realistic atmospheric conditions, and multiple viewpoints enhancing visual variability. Additionally, two preprocessed versions with standardized resolutions of 640×480 and 512×512 pixels are provided, each containing 40,000 images. CARLAHaze also offers predefined splits for training, validation, and testing to facilitate its use.
+          </p>
+          <p>
+            The contributions of this work can be summarized as follows: 
+            <ol type="1">
+              <li>We introduce CARLAHaze, a synthetic dataset for image dehazing, consisting of 10,000 high-resolution hazy and haze-free image pairs.</li>
+              <li>We establish a benchmark by evaluating SOTA dehazing models on CARLAHaze.</li>
+              <li>We demonstrate that models trained on CARLAHaze generalize well to real-world hazy images.</li>
+              <li>We show that CARLAHaze serves effectively as a pretraining resource, improving performance after fine-tuning on limited real-world data.</li>
+          </ol>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Main features of CARLAHaze</h2>
+
+      <!-- Haze intensity levels -->
+      <h5 class="title is-5 has-text-centered" style="color: #3b3b3b;">10 haze intensity levels</h5>
+      <div class="content has-text-justified">
+        <p>
+          CARLAHaze contains 10 haze intensity levels. These range progressively from 10% (light haze) up to 100% (dense haze), providing a comprehensive set of scenarios that simulate varying visibility conditions. 
+        </p>
+      </div>
+      <div class="carousel carousel1">
+        <div class="slideshow-container">
+          <div class="mySlides1"><div class="img-container"><img src="./static/images/clean.jpg"></div></div>
+          <div class="mySlides1"><div class="img-container"><img src="./static/images/haze10.jpg"></div></div>
+          <div class="mySlides1"><div class="img-container"><img src="./static/images/haze20.jpg"></div></div>
+          <div class="mySlides1"><div class="img-container"><img src="./static/images/haze30.jpg"></div></div>
+          <div class="mySlides1"><div class="img-container"><img src="./static/images/haze40.jpg"></div></div>
+          <div class="mySlides1"><div class="img-container"><img src="./static/images/haze50.jpg"></div></div>
+          <div class="mySlides1"><div class="img-container"><img src="./static/images/haze60.jpg"></div></div>
+          <div class="mySlides1"><div class="img-container"><img src="./static/images/haze70.jpg"></div></div>
+          <div class="mySlides1"><div class="img-container"><img src="./static/images/haze80.jpg"></div></div>
+          <div class="mySlides1"><div class="img-container"><img src="./static/images/haze90.jpg"></div></div>
+          <div class="mySlides1"><div class="img-container"><img src="./static/images/haze100.jpg"></div></div>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        <div class="dots">
+          <span class="dot1" onclick="currentSlide(0, 1)"></span>
+          <span class="dot1" onclick="currentSlide(0, 2)"></span>
+          <span class="dot1" onclick="currentSlide(0, 3)"></span>
+        </div>
+      </div>
+
+      <!-- Distance-based haze distribution -->
+      <h5 class="title is-5 has-text-centered" style="color: #3b3b3b;">Distance-based haze distribution</h5>
+      <div class="content has-text-justified">
+        <p>
+          CARLAHaze incorporates distance-based atmospheric scattering according to CARLA's physically-consistent haze model. In this model, distant objects are more affected by haze, appearing more occluded due to increased scattering, while closer objects maintain higher visual clarity.
+        </p>
+      </div>
+      <div class="carousel carousel2">
+        <div class="slideshow-container">
+          <div class="mySlides2"><div class="img-container"><img src="./static/images/distance1.jpg"></div></div>
+          <div class="mySlides2"><div class="img-container"><img src="./static/images/distance2.jpg"></div></div>
+          <div class="mySlides2"><div class="img-container"><img src="./static/images/distance3.jpg"></div></div>
+          <div class="mySlides2"><div class="img-container"><img src="./static/images/distance4.jpg"></div></div>
+          <div class="mySlides2"><div class="img-container"><img src="./static/images/distance5.jpg"></div></div>
+          <div class="mySlides2"><div class="img-container"><img src="./static/images/distance6.jpg"></div></div>
+          <div class="mySlides2"><div class="img-container"><img src="./static/images/distance7.jpg"></div></div>
+          <div class="mySlides2"><div class="img-container"><img src="./static/images/distance8.jpg"></div></div>
+          <div class="mySlides2"><div class="img-container"><img src="./static/images/distance9.jpg"></div></div>
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+        <div class="dots">
+          <span class="dot2" onclick="currentSlide(1, 1)"></span>
+          <span class="dot2" onclick="currentSlide(1, 2)"></span>
+          <span class="dot2" onclick="currentSlide(1, 3)"></span>
+        </div>
+      </div>
+
+      <!-- Diverse scene elements -->
+      <h5 class="title is-5 has-text-centered" style="color: #3b3b3b;">Diverse scene elements</h5>
+      <div class="content has-text-justified">
+        <p>
+          CARLAHaze contains a diverse set of visual elements, including buildings, vehicles, vegetation, street infrastructure, and recreational objects, providing high visual variability.
+        </p>
+      </div>
+      <div class="carousel carousel3">
+        <div class="slideshow-container">
+          <div class="mySlides3"><div class="img-container"><img src="./static/images/element1.jpg"></div></div>
+          <div class="mySlides3"><div class="img-container"><img src="./static/images/element2.jpg"></div></div>
+          <div class="mySlides3"><div class="img-container"><img src="./static/images/element3.jpg"></div></div>
+          <div class="mySlides3"><div class="img-container"><img src="./static/images/element4.jpg"></div></div>
+          <div class="mySlides3"><div class="img-container"><img src="./static/images/element5.jpg"></div></div>
+          <div class="mySlides3"><div class="img-container"><img src="./static/images/element6.jpg"></div></div>
+          <div class="mySlides3"><div class="img-container"><img src="./static/images/element7.jpg"></div></div>
+          <div class="mySlides3"><div class="img-container"><img src="./static/images/element8.jpg"></div></div>
+          <div class="mySlides3"><div class="img-container"><img src="./static/images/element9.jpg"></div></div>
+          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+        </div>
+        <div class="dots">
+          <span class="dot3" onclick="currentSlide(2, 1)"></span>
+          <span class="dot3" onclick="currentSlide(2, 2)"></span>
+        </div>
+      </div>
+
+      <!-- Additional features -->
+      <h5 class="title is-5 has-text-centered" style="color: #3b3b3b;">Visual perspective variability</h5>
+      <div class="content has-text-justified">
+        <p>
+          CARLAHaze contains images captured at different viewpoints and distances within the same scenario, resulting in variations of visual perspective. Consequently, scene elements exhibit positional and scale changes, enhancing the dataset's visual richness.
+        </p>
+      </div>
+      <div class="carousel carousel4">
+        <div class="slideshow-container">
+          <div class="mySlides4"><div class="img-container"><img src="./static/images/view1.jpg"></div></div>
+          <div class="mySlides4"><div class="img-container"><img src="./static/images/view2.jpg"></div></div>
+          <div class="mySlides4"><div class="img-container"><img src="./static/images/view3.jpg"></div></div>
+          <div class="mySlides4"><div class="img-container"><img src="./static/images/view4.jpg"></div></div>
+          <div class="mySlides4"><div class="img-container"><img src="./static/images/view5.jpg"></div></div>
+          <div class="mySlides4"><div class="img-container"><img src="./static/images/view6.jpg"></div></div>
+          <div class="mySlides4"><div class="img-container"><img src="./static/images/view7.jpg"></div></div>
+          <div class="mySlides4"><div class="img-container"><img src="./static/images/view8.jpg"></div></div>
+          <div class="mySlides4"><div class="img-container"><img src="./static/images/view9.jpg"></div></div>
+          <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+        </div>
+        <div class="dots">
+          <span class="dot4" onclick="currentSlide(3, 1)"></span>
+          <span class="dot4" onclick="currentSlide(3, 2)"></span>
+          <span class="dot4" onclick="currentSlide(3, 3)"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- BibTex citation --> 
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{2025carlahaze,
+      title={CARLAHaze: A Large-scale Synthetic Dataset for Outdoor Image Dehazing}, 
+      author={Leo Thomas Ramos and Henry Valesaca and Angel D. Sappa},
+      year={2025}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+<div class="container">
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+
+        <p>
+          This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+          Commons Attribution-ShareAlike 4.0 International License</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+<script src="./static/js/imagecarousell.js"></script>
+</body>
+</html>

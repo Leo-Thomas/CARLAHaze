@@ -1,0 +1,186 @@
+
+
+.carousel {
+  position: relative;
+  max-width: 35%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.mySlides1 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.mySlides2 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.mySlides3 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.mySlides4 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%; /* Full width */
+  margin: auto;
+}
+
+
+img {
+  width: 90%; /* Images occupy 90% of the carousel area */
+  height: auto; /* Maintain aspect ratio */
+  display: inline-block; /* Treat images as inline-block elements */
+  margin: auto; /* Center images within the slide */
+}
+
+/* Styling for previous and next arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: rgba(192, 186, 186, 0.362); /* Dark background */
+  user-select: none;
+  transform: translate(0, -50%); /* Centers the arrows vertically */
+}
+
+/* Left and right arrow positioning */
+.prev {
+  left: -5px; /* Aligns the left arrow to the left */
+}
+
+.next {
+  right: -5px; /* Aligns the right arrow to the right */
+}
+
+/* Hover effect for the arrows */
+.prev:hover, .next:hover {
+  background-color: rgba(212, 201, 201, 0.891); /* Dark background */
+}
+
+/* Styling for arrows inside the circles */
+/* .prev::before, .next::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  margin-right: 4px;
+} */
+
+/* .prev::before {
+  transform: rotate(-135deg); 
+  margin-right: 0;
+  margin-left: 4px;
+} */
+
+.dots {
+  text-align: center;
+  padding: 10px 0; /* Adds some padding around the dots for better spacing */
+}
+
+.dot1 {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px; /* Adds horizontal space between dots */
+  background-color: #bbb; /* Color of inactive dots */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+/* Active dot styling */
+.dot1.active {
+  background-color: #717171; /* Color of the active dot */
+}
+
+/* Hover effect for dots */
+.dot1:hover {
+  background-color: #555; /* Darker shade on hover */
+}
+
+
+.dot2 {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px; /* Adds horizontal space between dots */
+  background-color: #bbb; /* Color of inactive dots */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+/* Active dot styling */
+.dot2.active {
+  background-color: #717171; /* Color of the active dot */
+}
+
+/* Hover effect for dots */
+.dot2:hover {
+  background-color: #555; /* Darker shade on hover */
+}
+
+.dot3 {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px; /* Adds horizontal space between dots */
+  background-color: #bbb; /* Color of inactive dots */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer; /* Adds a pointer cursor on hover */
+}
+
+/* Active dot styling */
+.dot3.active {
+  background-color: #717171; /* Color of the active dot */
+}
+
+/* Hover effect for dots */
+.dot3:hover {
+  background-color: #555; /* Darker shade on hover */
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Optional: Add space between dots and carousel */
+.carousel-container + div {
+  margin-top: 10px;
+}
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
