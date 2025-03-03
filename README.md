@@ -57,7 +57,7 @@ The labels are provided in **YOLO format**, making them compatible with popular 
 
 ## Training and test on all haze leves
 
-In order to train and/or evaluate your models using all haze levels together, or a specific combination, we provide you with a straight forward script where you can specify the paths of the different levels or scenes of interest and generate the combined train, val, and test splits. See [combine.py](https://github.com/Leo-Thomas/CARLAHaze/blob/main/combine.py)
+In order to train and/or evaluate your models using all haze levels together (or a specific combination), we provide a straight forward script where you can specify the paths of the different levels or scenes of interest and generate the combined train, val, and test splits. See [combine.py](https://github.com/Leo-Thomas/CARLAHaze/blob/main/combine.py)
 
 ## License
 
