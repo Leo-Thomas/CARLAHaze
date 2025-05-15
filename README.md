@@ -11,7 +11,7 @@
 
 <!-- [![Watch the Demo](./assets/robust_aerial_videos.mp4)](./assets/robust_aerial_videos.mp4) -->
 
-<img src="./assets/teaser.png" width="100%"/>
+<img src="./assets/teaser (2).png" width="100%"/>
 
 ## About the project
 
