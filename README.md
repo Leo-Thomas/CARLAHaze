@@ -19,7 +19,7 @@ We present CARLAHaze, a synthetic dataset designed for outdoor image dehazing. C
 
 ## Dataset download
 
-The dataset is available for download via IEEE DataPort [here](#).
+The dataset is available for download via IEEE DataPort [here](#). _(to be released after publication)_
 
 <!-- ## 📣 Announcements
 
